@@ -11,7 +11,6 @@ section {
 
 nav {
 	background: #02908B;
-	height: 60px;
 	position: fixed;
 	z-index: 100;
 	width: 100%;
@@ -34,13 +33,35 @@ nav span {
 }
 
 nav ul {
-	margin: 18px 25px 0 0;
+	margin: 18px 25px 18px 0;
 	float: right;
 }
 
 nav li {
 	display: inline-block;
 	padding:0 15px;
+}
+
+@media (max-width: 700px) {
+	nav {
+		text-align: center;
+		position: relative;
+	}
+	nav > a {
+		margin: 0 auto 10px;
+		display: block;
+		position: relative;
+	}
+	nav ul {
+		float: none;
+		display: inline-block;
+		margin: 10px auto;
+	}
+	nav li {
+		margin: 5px auto;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 nav li > a {
@@ -85,6 +106,24 @@ header p {
 
 header img {
 	padding:35px 0;
+}
+
+@media (max-width: 700px) {
+	header {
+		min-height: 380px;
+		padding-top: 9%;
+		padding-bottom: 18px;
+	}
+	header h2 {
+		font-size: 8vw;
+		letter-spacing: 2vw;
+	}
+	header h1 {
+		font-size: 6vw;
+	}
+	header p {
+		font-size: 4vw;
+	}
 }
 
 .yellowbtn {
@@ -144,6 +183,15 @@ header img {
     margin: 3% 0;
     padding: 0 4%;
     width: 24%;
+}
+
+@media (max-width: 700px) {
+	.aboutBox {
+		width: 95%;
+		border-right: none;
+		margin: 0 auto;
+		float: none;
+	}
 }
 
 .aboutBox:last-child {
@@ -210,6 +258,15 @@ header img {
 	font-size: 11px;
 	font-weight: bold;
 	margin: 15px 0;
+}
+
+@media (max-width: 700px) {
+	#service {
+		background-position: 2%;
+	}
+	.serviceWrapper {
+		width: 100%;
+	}
 }
 
 #contact {
